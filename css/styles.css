@@ -186,6 +186,15 @@
     margin-right: 20px;
 }
 
+
+/* casilla de mail footer */
+.fa-envelope:before {
+  content: "\f0e0";
+  font-size: 16px;
+}
+
+
+
 /* Footer responsive */
 /* Para PC de escritorio */
 @media (min-width: 992px) {
@@ -527,3 +536,4 @@ textarea{
   background-color: #5772bcc2;
   border-radius: 10px;
 }
+
