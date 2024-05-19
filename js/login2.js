@@ -18,12 +18,16 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
         title: 'Bienvenido usuario!',
         showConfirmButton: false,
         timer: 1500
-      });
+      })
+      .then(() => {
+        window.location = "../index.html"
+      })
+
     } else {
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'Contraseña o usuario incorrecto!',
+        text: 'Contraseña/usuario incorrectos',
       });
     }
   }
