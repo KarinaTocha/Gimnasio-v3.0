@@ -149,102 +149,8 @@
   background-color:rgba(134, 22, 22, 0.788) !important;
 }
 
-.aside-container{
-    display:table-column;
-    height: 70vh;
-    flex: 0 0 20%; /* Ancho fijo para la imagen */
-    margin-right: 90px;
-    margin-top: 80px;
-    overflow: hidden;
-}
-
-/* Elemento contenedor de las imágenes */
-.carousel-elemento {
-  flex-direction: column;
-  animation: automatizacion 15s infinite linear;
-  padding: 10px;
-}
-
-/* Animación de transición vertical */
-@keyframes automatizacion {
-  0% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(-100%);
-  }
-  50% {
-    transform: translateY(-200%);
-  }
-  75% {
-    transform: translateY(-300%);
-  }
-  100% {
-    transform: translateY(-400%);
-  }
-}
-
 .imagenes {
   width: 300px;
-  height: auto;
-  margin-top: 40%;
-}
-
-
-/* Estilos para pantallas grandes (más de 1200px) */
-@media (min-width: 1200px) {
-  .aside-container {
-      width: 20%;
-  }
-}
-
-/* Estilos para pantallas medianas (tablet) (entre 768px y 1200px) */
-@media (max-width: 1199px) and (min-width: 768px) {
-  .aside-container {
-      width: 30%;
-      margin-right: 30px;
-  }
-}
-
-/* Estilos para pantallas pequeñas (móviles) (menos de 768px) */
-@media (max-width: 767px) {
-  .aside-container {
-      width: 100%;
-      height: auto;
-      margin-right: 0;
-      margin-top: 20px;
-  }
-}
-
-/* Estilo general para los elementos del carrusel */
-.carousel-elemento {
-  flex-direction: column;
-  animation: automatizacion 15s infinite linear;
-  padding: 10px;
-}
-
-/* Animación de transición vertical */
-@keyframes automatizacion {
-  0% {
-      transform: translateY(0);
-  }
-  25% {
-      transform: translateY(-100%);
-  }
-  50% {
-      transform: translateY(-200%);
-  }
-  75% {
-      transform: translateY(-300%);
-  }
-  100% {
-      transform: translateY(-400%);
-  }
-}
-
-/* Estilos para las imágenes dentro del carrusel */
-.imagenes {
-  width: 100%;
   height: auto;
   margin-top: 40%;
 }
@@ -476,44 +382,6 @@ form button:hover {
   background: linear-gradient(to left,  rgb(50, 12, 12),rgb(188, 48, 48));
 }
 
-
-/* Alert del login -------------------------------------------------------------------*/
-.swal2-popup {
-  display: none;
-  background-color: antiquewhite;
-  position: relative;
-  box-sizing: border-box;
-  grid-template-columns: minmax(0, 100%);
-  width: 32em;
-  max-width: 100%;
-  padding: 0 0 1.25em;
-  border: none;
-  border-radius: 5px;
-  background: #000;
-  color: #ffffff;
-  font-family: inherit;
-  font-size: 1rem;
-}
-/* Boton del ok */
-.swal2-styled.swal2-confirm {
-  border: 0;
-  border-radius: .25em;
-  background: initial;
-  background-color:rgba(134, 22, 22, 0.788);
-  color: #fff;
-  font-size: 1em;
-}
-
-
-
-/* error color */
-.swal2-icon.swal2-error {
-  border-color: rgba(134, 22, 22, 0.788);
-  color: rgba(134, 22, 22, 0.788);
-}
-
-
-
 /* Estilos del formulario de registro */
 .form-registro{
   padding: 10px;
@@ -643,7 +511,7 @@ form button:hover {
   width: 90%;
   text-align: center;
   margin-left: 20px;
-  border: solid 2px rgb(237, 57, 57);
+  
 }
 
 .th, td, th{
@@ -652,6 +520,7 @@ form button:hover {
   text-align: center;
   font-size: 1em;
   border-radius: 20px;
+
 }
 
 /* Estilo consultas */
@@ -660,3 +529,40 @@ textarea{
   border-radius: 10px;
 }
 
+.aside-container{
+  display:table-column;
+  height: 70vh;
+  flex: 0 0 20%; /* Ancho fijo para la imagen */
+  align-items: center;
+  margin-right: 90px;
+  margin-top: 80px;
+  overflow: hidden;
+}
+
+
+/* Elemento contenedor de las imágenes */
+.carousel-elemento {
+  flex-direction: column;
+  animation: automatizacion 15s infinite linear;
+}
+
+
+
+/* Animación de transición vertical */
+@keyframes automatizacion {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  75% {
+    transform: translateY(-300%);
+  }
+  100% {
+    transform: translateY(-400%);
+  }
+}
